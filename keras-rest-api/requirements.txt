@@ -1,0 +1,5 @@
+flask 
+gevent 
+requests 
+pillow
+tensorflow
