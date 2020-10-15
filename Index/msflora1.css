@@ -1,0 +1,116 @@
+a:hover   { color: #dc143c}
+.title        { font-family: Georgia; font-size: 18pt; color: #910D25; font-weight: bold }
+.subtitlered    { font-family: Georgia; font-size: 10pt; color: #910D25; font-weight: bold }
+.subtitle    { font-family: Georgia; font-size: 12pt; font-weight: bold; margin-bottom:11; color:#000000 }
+a  { color: #AF4D4E; font-style: normal; font-weight: bold; text-decoration: none }
+:hover.navfont#a  { color: #f00; font-family: Verdana, Arial, Helvetica, Geneva, Swiss, SunSans-Regular; text-decoration: none }
+a:hover.sitelink { color: black; font-weight: normal; font-family: Verdana, Arial, Helvetica, Geneva, Swiss, SunSans-Regular; text-decoration: none }
+body         { color: black; font-size: 12px; font-family: Verdana, Arial, Helvetica, Geneva, Swiss, SunSans-Regular }
+P.breakhere { page-break-after: always }
+.head2   { color: red; font-style: normal; font-weight: bold; font-size: 16px; font-family: Arial, Helvetica, Geneva, Swiss, SunSans-Regular; text-decoration: none }
+.head3 { color: red; font-weight: bold; font-size: 12px; font-family: Arial, Helvetica, Geneva, Swiss, SunSans-Regular; text-decoration: none }
+.body2        { color: black; font-size: 9px; font-family: Verdana, Arial, Helvetica, Geneva, Swiss, SunSans-Regular }
+.bodyb        { color: black; font-size: 10px; font-weight: bold; font-family: Verdana, Arial, Helvetica, Geneva, Swiss, SunSans-Regular }
+.bodyfont   { color: #000000; font-size: 10pt; line-height: 11px; font-family: Corbel; text-decoration: none }
+.bodyfont12   { color: #000000; font-size: 12pt; line-height: 16px; font-family: Corbel; text-decoration: none }
+.bodyfont11   { color: black; font-size: 11px; line-height: 12px; font-family: Verdana, Arial, Helvetica, Geneva, Swiss, SunSans-Regular; text-decoration: none }
+.body9   { color: black; font-size: 9px; line-height: 10px; font-family: Verdana, Arial, Helvetica, Geneva, Swiss, SunSans-Regular; text-decoration: none }
+.body8   { color: black; font-size: 8px; line-height: 10px; font-family: Verdana, Arial, Helvetica, Geneva, Swiss, SunSans-Regular; text-decoration: none }
+.bodyfont   { color: black; font-size: 10px; line-height: 11px; font-family: Verdana, Arial, Helvetica, Geneva, Swiss, SunSans-Regular; text-decoration: none }
+.bodyfont2   { color: black; font-size: 10px; line-height: 16px; font-family: Verdana, Arial, Helvetica, Geneva, Swiss, SunSans-Regular; text-decoration: none }
+.bodysmall   { color: black; font-size: 9px; line-height: 10px; font-family: Verdana, Arial, Helvetica, Geneva, Swiss, SunSans-Regular; text-decoration: none }
+.bodyplain    { font-size: 10px; font-family: Verdana, Helvetica, Geneva, Swiss, SunSans-Regular; text-decoration: none }
+.bodyplain2    { font-size: 12px; font-family: Verdana, Helvetica, Geneva, Swiss, SunSans-Regular; text-decoration: none }
+.b10century          {
+	font-size: 10pt;
+	font-family: Century;
+	text-decoration: none;
+	background-repeat: repeat-x;
+}
+td          {
+	font-size: 10pt;
+	font-family: Century;
+	text-decoration: none;
+	background-repeat: repeat-x;
+}
+#FloraTable {
+	padding: 2px;
+}
+
+TD.sitelink  { border-bottom: 2px groove #dcdcdc }
+.headfont   { color: #366; font-weight: bold; font-family: Arial, Helvetica, Geneva, Swiss, SunSans-Regular }
+.headfont2   { color: #FF0000; font-weight: bold; font-family: Arial, Helvetica, Geneva, Swiss, SunSans-Regular; font-size:16px; text-decoration:none }
+.navfont  { color: #000080; font-family: Verdana, Arial, Helvetica, Geneva, Swiss, SunSans-Regular; text-decoration: none }
+.sitelink        { color: #f5f5f5; font-style: normal; font-weight: normal; font-size: 10px; line-height: 10px; font-family: Verdana, Arial, Helvetica, Geneva, Swiss, SunSans-Regular; text-decoration: none; margin-left: 4px }
+.spacerfont { color: #fff; font-size: 2px; line-height: 2px; font-family: Verdana, Arial, Helvetica, Geneva, Swiss, SunSans-Regular }
+.subheadfont { font-weight: bold; font-size: 13px; line-height: 15px; font-family: Arial, Verdana, Helvetica, Geneva, Swiss, SunSans-Regular }
+.subheadfont2 { font-size: 13px; color: black; line-height: 15px; font-family: Arial, Verdana, Helvetica, Geneva, Swiss, SunSans-Regular }
+.subheadfont3 { font-style: italic; font-weight: bold; font-size: 14px; line-height: 18px; font-family: Arial, Verdana, Helvetica, Geneva, Swiss, SunSans-Regular }
+.subheadfont4 { font-weight: normal; color: black; font-size: 13px; line-height: 18px; font-family: Arial, Verdana, Helvetica, Geneva, Swiss, SunSans-Regular; text-decoration: none }
+.subheadfont5 { font-weight: bold; font-size: 16px; line-height: 18px; font-family: Arial, Verdana, Helvetica, Geneva, Swiss, SunSans-Regular }
+.titlefont { font-weight: normal; font-size: 26px; line-height: 26px; font-family: Times New Roman }
+.titlefont3 { font-weight: normal; font-size: 22px; line-height: 26px; font-family: Times New Roman }
+.titlefont2 { font-weight: bold; font-size: 18px; line-height: 18px; font-family: Times New Roman }
+.tablefont { font-weight: normal; font-size: 11px; line-height: 13px; font-family: Verdana, Arial, Helvetica, Geneva, Swiss, SunSans-Regular; text-decoration: none; margin-left: 4px; padding-left: 6px }
+.trademark { color: #fff; font-size: 7px; vertical-align: super }
+.pageheader { color: black; font-weight: bold; font-size: 16px; font-family: Arial, Verdana, Helvetica, Geneva, Swiss, SunSans-Regular; text-decoration: none }
+.comment {font-size: 14px; font-family: Georgia, Times New Roman, Garamond, Times; text-decoration: none }
+.bdr_tblr { border-style:solid; border-width:1; margin:6px; padding-left:4; padding-right:4; padding-top:1; padding-bottom:1 }
+.bdr_tblr2 { margin: 2px; padding: 3px;  }
+.bdr_tblr3 { margin: 2px; padding: 5px; }
+.body_12bf { font-size: 12px; font-family: Arial, Helvetica; font-weight: bold; }
+.body_10lf { font-size: 10px; font-family: Arial, Helvetica; font-weight: normal; }
+.note { font-size: 10pt; font-family: Latha; font-weight: normal; font-weight: bold;}
+#subheader { color: navy; font-style: normal; font-weight: bold; font-size: 12px; font-family: Verdana, Arial, Helvetica, Geneva, Swiss, SunSans-Regular; text-decoration: none }
+#SSTRed { color: red; font-size: 11px; font-family: Verdana, Arial, Helvetica, Geneva, Swiss, SunSans-Regular; text-decoration: none }
+#SST { color: black; font-size: 11px; font-family: Verdana, Arial, Helvetica, Geneva, Swiss, SunSans-Regular; text-decoration: none }
+#SST2 { font-size: 12px; font-weight: bold; font-family: Verdana, Arial, Helvetica, Geneva, Swiss, SunSans-Regular; text-decoration: none }
+.bdr_tblr { margin: 6px; padding: 6px; border: solid 1px #88856f; }
+.bdr2_blr { border-left:1px solid #88856f; border-right:1px solid #88856f; border-top:0px solid #88856f; border-bottom:1px solid #88856f; margin:0; background-color: #E7F1C4; }
+.bdr3_tlr { border-left:1px solid #88856f; border-right:1px solid #88856f; border-top:1px solid #88856f; border-bottom:0px solid #88856f; background-color: #eee; margin: 0; padding: 3px;  }
+.species { text-decoration: none; color: white; font-size: 10px; font-weight: bold; font-family: Verdana, Arial, Helvetica, Geneva, Swiss, SunSans-Regular; line-height:16px}
+.div_flower { height: auto; width: auto; left: auto; z-index: 50; top: inherit; position: relative; visibility: visible; }
+.div_z { height: auto; width: 192; left: 8; z-index: 50; top: inherit; position: relative; visibility: visible; }
+.div_img { z-index: 90}
+.div_pic { height: auto; width: auto; left: 0; z-index: 90; top: 0; position: absolute; border: thin solid black; display:none }
+:hover.species {color: #FFFF99}
+.menu         { font-family: Arial Narrow; font-size: 8pt; color: #365709; font-weight:bold; margin-left:3; margin-right:3; border-left-width:1; border-right-width:1  }
+/*		New entries from style.css  	*/
+.col { display: block; float: right; width: 100%; min-height: 30px; }
+.one-fourth {float:left; min-width:192px }
+.floatleft {float:left }
+.pad-right-10 {padding-right:10px }
+.three-fourths { width: 80.25%; max-width:900px; min-width:660px }
+#wrapper { width:90%; padding:10px 5% 10px 5%; max-width:900px }
+.clear { clear: both; display: block; overflow: hidden; visibility: hidden; width: 0; height: 0; }
+.span9 { width: 538px; }
+.row-fluid .span9 { width: 74.30939226519337%; *width: 74.25620077583166%; }
+.titleblock { }
+.searchtext { max-width:900px; min-width:660px }
+.search-pic-container { 
+	padding:4px 10px 4px 10px; 
+	background-color:white; 
+	border:thin solid #88856F; 
+	margin:4px 10px 0px 10px; 
+    height: 180px; /*can be anything*/
+    width: 180px; /*can be anything*/
+    position: relative;  
+} 
+.search-pic-container a img {
+    display:block;
+	overflow:hidden;
+	vertical-align:middle;
+	
+	max-height: 100%;  
+    max-width: 100%; 
+    width: auto;
+    height: auto;
+    position: absolute;  
+    top: 0;  
+    bottom: 0;  
+    left: 0;  
+    right: 0;  
+    margin: auto;	
+}
+.search-pic-bar { margin: 0px 10px 15px 10px; background-color:#88856f; padding:0px 10px 4px 10px; vertical-align:middle; max-width:182px  } 
+.search-block {height:235px;}
