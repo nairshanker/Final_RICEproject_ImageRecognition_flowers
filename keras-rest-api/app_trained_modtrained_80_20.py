@@ -113,6 +113,7 @@ def predict():
 			print(type(preds))
 			print(preds.shape)
 			# results = imagenet_utils.decode_predictions(preds)
+			# This will give index of highest class with probability
 			data["prediction"] = num_vs_names[np.argmax(preds)]
 
 			# loop over the results and add them to the list of
