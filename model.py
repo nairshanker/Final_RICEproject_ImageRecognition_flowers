@@ -1,4 +1,3 @@
-
 import keras
 from keras.models import Model
 from keras.applications.vgg19 import preprocess_input
@@ -27,7 +26,7 @@ class PredictFlower:
 
     def load_model(self):
 
-        self.load("model_name.h5")
+        self.load("mobilenet_model_80_20.hdf5")
 
     def call_predict(self, images, folder):
 
