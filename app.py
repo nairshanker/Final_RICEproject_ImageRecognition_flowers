@@ -42,6 +42,16 @@ def index():
     return render_template('index.html')
 
 
+@app.route("/flower_category", methods=['POST'])
+def find_category():
+    data = {"success": False}
+    if request.method == 'POST':
+        print("flower_category is ")
+        print("-------------------------------------")
+        data = request.get_json()
+        
+
+        return render_template('result.html')
 
 if __name__ == '__main__':
     app.run(debug=True)
