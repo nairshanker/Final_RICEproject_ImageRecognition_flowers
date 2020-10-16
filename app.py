@@ -18,28 +18,34 @@ def index():
     print("upload click")
     if request.method == 'POST':
         if request.files.get('file'):
-#
-            images = request.files.getlist("file") 
+    #
+            images = request.files.getlist("file")
             print(f"Images: {images}")
-            
+
             files = glob.glob(app.config['UPLOAD_FOLDER']+'/*')
-            
+
             for f in files:
                 os.remove(f)
 
             filenames = []
-            
-            for image in images:     
-                
-                filepath = os.path.join(app.config['UPLOAD_FOLDER'], image.filename)
+
+            for image in images:
+
+                filepath = os.path.join(
+                    app.config['UPLOAD_FOLDER'], image.filename)
                 image.save(filepath)
                 filenames.append(image.filename)
                 print(filenames)
 
-            predictions = my_pred.call_predict(filenames, app.config['UPLOAD_FOLDER'])
+            predictions = my_pred.call_predict(
+                filenames, app.config['UPLOAD_FOLDER'])
 
 
-    return render_template('index.html')
+        return jsonify({'result': 'success', 'predictions': predictions})
+    # 
+    
+
+    return render_template('index.html', predictions)
 
 
 @app.route("/flower_category", methods=['POST'])
@@ -49,9 +55,9 @@ def find_category():
         print("flower_category is ")
         print("-------------------------------------")
         data = request.get_json()
-        
 
-        return render_template('result.html')
+        return render_template('result.html', data)
+
 
 if __name__ == '__main__':
     app.run(debug=True)

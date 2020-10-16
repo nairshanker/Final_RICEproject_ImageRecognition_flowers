@@ -1,5 +1,6 @@
 import keras
 from keras.models import Model
+from keras.models import load_model
 from keras.applications.vgg19 import preprocess_input
 from keras.preprocessing import image
 from keras.callbacks import ModelCheckpoint
@@ -20,13 +21,14 @@ class PredictFlower:
         self.category = list(df_category['Category'])
         self.num_category = len(self.category)
         K.clear_session()
-        self.load_model()
+        self.loader()
 
         self.model_final._make_predict_function()
 
-    def load_model(self):
+    def loader(self):
 
-        self.load("mobilenet_model_80_20.hdf5")
+        # self.load_model("FinalProject/mobilenet_model_trained_80_20")
+        self.load_model = load_model("FinalProject/mobilenet_model_trained_80_20")
 
     def call_predict(self, images, folder):
 
