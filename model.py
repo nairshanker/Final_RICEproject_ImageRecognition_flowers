@@ -26,7 +26,30 @@ class PredictFlower:
         self.model_final._make_predict_function()
 
     def loader(self):
+        
+        pixels = 224
+        IMAGE_SIZE = (pixels, pixels)
+        do_fine_tuning = False
 
+        train_ds = tf.keras.preprocessing.image_dataset_from_directory('flower_photos',
+                    validation_split=0.2, subset="training", seed=123, image_size=(224, 224),
+                    batch_size=32)
+        class_names = train_ds.class_names
+        num_classes = len(class_names)
+
+        module_selection = ("mobilenet_v2_100_224", 224) 
+        handle_base, pixels = module_selection
+        MODULE_HANDLE ="https://tfhub.dev/google/imagenet/{}/feature_vector/4".format(handle_base)
+        model3 = tf.keras.Sequential([
+        tf.keras.layers.InputLayer(input_shape=IMAGE_SIZE + (3,)),
+        hub.KerasLayer(MODULE_HANDLE, trainable=do_fine_tuning),
+        tf.keras.layers.Dropout(rate=0.2),
+        tf.keras.layers.Dense(num_classes, kernel_regularizer=tf.keras.regularizers.l2(0.0001))])
+        model3.build((None,)+IMAGE_SIZE+(3,))
+        model3.compile(optimizer=tf.keras.optimizers.SGD(lr=0.005, momentum=0.9), 
+                       loss=tf.keras.losses.SparseCategoricalCrossentropy(from_logits=True),
+                       metrics=['accuracy'])
+        
         # self.load_model("FinalProject/mobilenet_model_trained_80_20")
         self.load_model = load_model("FinalProject/mobilenet_model_trained_80_20")
 
