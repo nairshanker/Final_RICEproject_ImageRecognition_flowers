@@ -39,10 +39,6 @@ def index():
 
             predictions = my_pred.call_predict(
                 filenames, app.config['UPLOAD_FOLDER'])
-
-
-        return jsonify({'result': 'success', 'predictions': predictions})
-    # 
     
 
     return render_template('index.html', predictions)
