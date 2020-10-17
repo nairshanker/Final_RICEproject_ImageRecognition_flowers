@@ -32,9 +32,9 @@ $("#how").click(function () {
 
 
 
-$(document).on("click", "i.del", function () {
-    $(this).parent().remove();
-});
+// $(document).on("click", "i.del", function () {
+//     $(this).parent().remove();
+// });
 
 
 //Upload the image and predict
