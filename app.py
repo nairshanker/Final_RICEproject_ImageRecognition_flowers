@@ -1,9 +1,9 @@
 
 from flask import Flask, jsonify, render_template, url_for, request, redirect
-import json
 import os
+import h5py
 import glob
-from model import PredictFlower
+from models import PredictFlower
 import pandas as pd
 from random import shuffle
 
@@ -18,7 +18,7 @@ def index():
     print("upload click")
     if request.method == 'POST':
         if request.files.get('file'):
-    #
+    
             images = request.files.getlist("file")
             print(f"Images: {images}")
 
@@ -31,19 +31,16 @@ def index():
 
             for image in images:
 
-                filepath = os.path.join(
-                    app.config['UPLOAD_FOLDER'], image.filename)
+                filepath = os.path.join(app.config['UPLOAD_FOLDER'], image.filename)
                 image.save(filepath)
                 filenames.append(image.filename)
                 print(filenames)
 
-            predictions = my_pred.call_predict(
-                filenames, app.config['UPLOAD_FOLDER'])
-    
-
-    return render_template('index.html', predictions)
+            predictions = my_pred.predictor(filenames, app.config['UPLOAD_FOLDER'])
 
 
+        return jsonify({'result': 'success', 'predictions': predictions})
+    return render_template('index.html')
 
 if __name__ == '__main__':
     app.run(debug=True)
