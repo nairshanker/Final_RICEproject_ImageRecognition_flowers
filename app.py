@@ -44,11 +44,11 @@ def predict():
 
             predictions = my_pred.predictor(filenames, app.config['UPLOAD_FOLDER'])
 
-    return render_template('word_search.html')    
+    # return render_template('word_search.html', predictions=predictions, user_image=files )    
 
-#             print(predictions)
-#         return jsonify({'result': 'success', 'predictions': predictions})
-#     return render_template('word_search.html')
+            print(predictions)
+        return jsonify({'result': 'success', 'predictions': predictions})
+    return render_template('word_search.html', predictions= predictions)
 
 
 
