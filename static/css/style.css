@@ -9,7 +9,7 @@ main {
 
 .landing {
   min-height: 100vh;
-  background: url("./flowers-hero.jpg");
+  background: url("../images/flowers-hero.jpg");
   background-size: cover;
   padding: 0rem 5rem;
 }
@@ -112,7 +112,7 @@ nav {
 	margin-bottom:15px}	
 .figure-caption {
 	font-size: 200%;
-	color: #cc4b37;
+	color: #130b09;
 	text-align: center;
 	font-weight: bold;
 	font-family: sans-serif}

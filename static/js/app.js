@@ -44,19 +44,16 @@ $(function () {
         var files = !!this.files ? this.files : [];
         if (!files.length || !window.FileReader) return; 
 
-        var captions = document.getElementsByClassName("figure-caption");
-        
-        for (i = 0; i < captions.length; i++) {
-            captions[i].textContent = "Predicting ... ";
-            console.log(captions[i].textContent)
-        }
+        var caption = $("#image-name"); 
+        caption.text("Predicting ... ");
+        console.log(caption.text())
 
         if (/^image/.test(files[0].type)) { // only image file
             var reader = new FileReader(); // instance of the FileReader
             reader.readAsDataURL(files[0]); // read the local file
 
             reader.onloadend = function () { 
-                uploadFile.closest(".imgUp").find('.imagePreview').css("background-image", "url(" + this.result + ")");
+                uploadFile.closest(".imgUp").find('.imagePreview').css("background-image", "url(" + this.result + "); height: 225px; width: 225px;");
                 var form_data = new FormData();
                 $.each($(".image-upload"), function (i, obj) {
                     $.each(obj.files, function (j, file) {
@@ -64,6 +61,18 @@ $(function () {
                         console.log(file);
                     });
                 });
+                var request = new XMLHttpRequest();
+                request.open("POST", "/predict");
+                request.onload = function(event) {
+                    if (request.status == 200) {
+                      var result = JSON.parse(this.responseText)
+                      //caption.html(result.predictions[0][1]);
+                      caption.html(result.prediction);
+                    } else {
+                     caption.html("Error " + request.status + " occurred when trying to upload your file.<br \/>");
+                    }
+                  };
+                request.send(form_data);
             }
         }
     },
