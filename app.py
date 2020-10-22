@@ -57,14 +57,18 @@ def load_model():
     # substitute in your own networks just as easily)
     global model
 
+	#######################################################
+	# Change the locaTION OF THIS PATH IN HEROKU
+	#######################################################
 	
-try:
-    model = keras.models.load_model("mobilenet_model_trained_80_20")
+    # model = keras.models.load_model('C:/ShankersDocs/EDUCATION/RICE_Bootcamp_DataAnalytics/final_project/new_flower_project/model_2')
 
-except Exception as e:
-    print('model load error')
-    raise e	
 
+    model = keras.models.load_model("C:/ShankersDocs/EDUCATION/RICE_Bootcamp_DataAnalytics/FinalProject_Img_Recognition_Flowers/Final_RICEproject_ImageRecognition_flowers/mobilenet_model_trained_80_20")
+    # model = keras.models.load_model('C:/ShankersDocs/EDUCATION/RICE_Bootcamp_DataAnalytics/FinalProject_Img_Recognition_Flowers/Final_RICEproject_ImageRecognition_flowers/mobilenet_model_90_10')
+
+ 
+	
 
 def prepare_image(image, target):
 	# if the image mode is not RGB, convert it
